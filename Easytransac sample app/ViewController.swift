@@ -11,6 +11,9 @@ class ViewController: UIViewController {
         
     static let API_KEY = "YOUR_API_KEY=="
     static let EASYTRANSAC_SCHEME = "easytransac://pay"
+    
+    // callback scheme is defined on the Info.plist URL Types
+    // https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app
     static let CALLBACK_SCHEME = "easytransacsampleapp://result";
     
     @IBAction func btnFlash(_ sender: Any) {
@@ -110,7 +113,7 @@ class ViewController: UIViewController {
         let url = URL(string: urlString)
         UIApplication.shared.open(url!) { (result) in
             if result {
-                print("App opened")
+                print("App opened with success")
             }
         }
     }

@@ -14,6 +14,7 @@
 		6DF5668627EE0BCB004DC3CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5668527EE0BCB004DC3CA /* Assets.xcassets */; };
 		6DF5668927EE0BCB004DC3CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5668727EE0BCB004DC3CA /* LaunchScreen.storyboard */; };
 		6DF5669127EE2221004DC3CA /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF5669027EE2221004DC3CA /* Toast.swift */; };
+		6DF5669327F1C25B004DC3CA /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5669227F1C25B004DC3CA /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6DF5668827EE0BCB004DC3CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DF5668A27EE0BCB004DC3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DF5669027EE2221004DC3CA /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		6DF5669227F1C25B004DC3CA /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		6DF5667027EE0BCA004DC3CA = {
 			isa = PBXGroup;
 			children = (
+				6DF5669227F1C25B004DC3CA /* Readme.md */,
 				6DF5667B27EE0BCA004DC3CA /* Easytransac sample app */,
 				6DF5667A27EE0BCA004DC3CA /* Products */,
 			);
@@ -130,6 +133,7 @@
 			files = (
 				6DF5668927EE0BCB004DC3CA /* LaunchScreen.storyboard in Resources */,
 				6DF5668627EE0BCB004DC3CA /* Assets.xcassets in Resources */,
+				6DF5669327F1C25B004DC3CA /* Readme.md in Resources */,
 				6DF5668427EE0BCA004DC3CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
