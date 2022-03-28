@@ -1,24 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Easytransac_sample_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoY-zh-lR9">
+                                <rect key="frame" x="20" y="114" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Flash Payment"/>
+                                <connections>
+                                    <action selector="btnFlash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="22i-Yq-hVM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziF-tx-ysM">
+                                <rect key="frame" x="20" y="165" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Manual Payment"/>
+                                <connections>
+                                    <action selector="btnManual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RmJ-sp-dvY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T4F-Oo-TZQ">
+                                <rect key="frame" x="20" y="216" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mail Payment"/>
+                                <connections>
+                                    <action selector="btnMail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OC9-xr-3WL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iad-Wu-fr5">
+                                <rect key="frame" x="20" y="267" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="QRCode Payment"/>
+                                <connections>
+                                    <action selector="btnQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G6W-bN-C43"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po1-LF-kk6">
+                                <rect key="frame" x="20" y="318" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sms Payment"/>
+                                <connections>
+                                    <action selector="btnSms:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mDO-Il-FeZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D24-sz-71u">
+                                <rect key="frame" x="20" y="369" width="374" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Flash with multiple occ."/>
+                                <connections>
+                                    <action selector="actionMultipleFlash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4X-ez-7bV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="leading" secondItem="T4F-Oo-TZQ" secondAttribute="leading" id="03Q-WH-t3e"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7mD-WO-vxu"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="top" secondItem="po1-LF-kk6" secondAttribute="bottom" constant="20" id="8bW-mT-Eec"/>
+                            <constraint firstItem="ziF-tx-ysM" firstAttribute="top" secondItem="OoY-zh-lR9" secondAttribute="bottom" constant="20" id="Qtk-Xo-uXI"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="leading" secondItem="iad-Wu-fr5" secondAttribute="leading" id="Tb6-lf-NRr"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="trailing" secondItem="T4F-Oo-TZQ" secondAttribute="trailing" id="Whc-e4-PcY"/>
+                            <constraint firstItem="iad-Wu-fr5" firstAttribute="top" secondItem="T4F-Oo-TZQ" secondAttribute="bottom" constant="20" id="Y0M-It-51G"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YI3-KB-rcd"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="trailing" secondItem="ziF-tx-ysM" secondAttribute="trailing" id="e0i-d0-KFe"/>
+                            <constraint firstItem="po1-LF-kk6" firstAttribute="top" secondItem="iad-Wu-fr5" secondAttribute="bottom" constant="20" id="eAK-Io-A47"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="leading" secondItem="OoY-zh-lR9" secondAttribute="leading" id="kfY-a0-kAR"/>
+                            <constraint firstItem="OoY-zh-lR9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="odH-cc-UTg"/>
+                            <constraint firstItem="T4F-Oo-TZQ" firstAttribute="top" secondItem="ziF-tx-ysM" secondAttribute="bottom" constant="20" id="ojr-QA-JhP"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="leading" secondItem="po1-LF-kk6" secondAttribute="leading" id="sfk-th-abB"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="trailing" secondItem="OoY-zh-lR9" secondAttribute="trailing" id="tUq-Z5-R6a"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="trailing" secondItem="po1-LF-kk6" secondAttribute="trailing" id="ubL-yN-lkY"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="leading" secondItem="ziF-tx-ysM" secondAttribute="leading" id="wXr-Nx-saT"/>
+                            <constraint firstItem="D24-sz-71u" firstAttribute="trailing" secondItem="iad-Wu-fr5" secondAttribute="trailing" id="zS3-aq-jDX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="116.51785714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

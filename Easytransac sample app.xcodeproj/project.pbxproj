@@ -13,6 +13,7 @@
 		6DF5668427EE0BCA004DC3CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5668227EE0BCA004DC3CA /* Main.storyboard */; };
 		6DF5668627EE0BCB004DC3CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5668527EE0BCB004DC3CA /* Assets.xcassets */; };
 		6DF5668927EE0BCB004DC3CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF5668727EE0BCB004DC3CA /* LaunchScreen.storyboard */; };
+		6DF5669127EE2221004DC3CA /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF5669027EE2221004DC3CA /* Toast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6DF5668527EE0BCB004DC3CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DF5668827EE0BCB004DC3CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DF5668A27EE0BCB004DC3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF5669027EE2221004DC3CA /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				6DF5668527EE0BCB004DC3CA /* Assets.xcassets */,
 				6DF5668727EE0BCB004DC3CA /* LaunchScreen.storyboard */,
 				6DF5668A27EE0BCB004DC3CA /* Info.plist */,
+				6DF5669027EE2221004DC3CA /* Toast.swift */,
 			);
 			path = "Easytransac sample app";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF5668127EE0BCA004DC3CA /* ViewController.swift in Sources */,
+				6DF5669127EE2221004DC3CA /* Toast.swift in Sources */,
 				6DF5667D27EE0BCA004DC3CA /* AppDelegate.swift in Sources */,
 				6DF5667F27EE0BCA004DC3CA /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +291,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SXXQ9K84MJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Easytransac sample app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,6 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SXXQ9K84MJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Easytransac sample app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
