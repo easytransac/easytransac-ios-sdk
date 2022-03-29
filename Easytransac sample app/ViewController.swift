@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         let dict: KeyValuePairs = [
             "apiKey": ViewController.API_KEY,
             "paymentMethod": "flash",
-            "amount": "1.07",
-            "isDemo": "true",
+            "amount": "107",
+            "demo": "true",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
@@ -32,10 +32,10 @@ class ViewController: UIViewController {
         let dict: KeyValuePairs = [
             "apiKey": ViewController.API_KEY,
             "paymentMethod": "manual",
-            "amount": "1.02",
-            "isDemo": "true",
-            "customerLastname": "Lademo",
-            "customerFirstname": "Paul",
+            "amount": "102",
+            "demo": "true",
+            "lastname": "Lademo",
+            "firstname": "Paul",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
@@ -46,11 +46,11 @@ class ViewController: UIViewController {
         let dict: KeyValuePairs = [
             "apiKey": ViewController.API_KEY,
             "paymentMethod": "mail",
-            "amount": "1.03",
-            "isDemo": "true",
-            "customerEmail": "demo@easytransac.com",
-            "customerLastname": "Lademo",
-            "customerFirstname": "Paul",
+            "amount": "103",
+            "demo": "true",
+            "email": "demo@easytransac.com",
+            "lastname": "Lademo",
+            "firstname": "Paul",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
@@ -61,8 +61,8 @@ class ViewController: UIViewController {
         let dict: KeyValuePairs = [
             "apiKey": ViewController.API_KEY,
             "paymentMethod": "qrcode",
-            "amount": "1.04",
-            "isDemo": "true",
+            "amount": "104",
+            "demo": "true",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
@@ -73,10 +73,10 @@ class ViewController: UIViewController {
         let dict: KeyValuePairs = [
             "apiKey": ViewController.API_KEY,
             "paymentMethod": "sms",
-            "amount": "1.05",
-            "isDemo": "true",
-            "customerCallingCode": "33",
-            "customerPhone": "0611223344",
+            "amount": "105",
+            "demo": "true",
+            "callingCode": "33",
+            "phone": "0611223344",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
@@ -87,10 +87,10 @@ class ViewController: UIViewController {
         let dict: KeyValuePairs = [
             "apiKey": ViewController.API_KEY,
             "paymentMethod": "flash",
-            "amount": "100",
-            "isDemo": "true",
-            "isMultiplePayment": "true",
-            "downPayment": "30",
+            "amount": "10000",
+            "demo": "true",
+            "multiplePayments": "true",
+            "downPayments": "3000",
             "multiplePaymentRepeat": "3",
             "callback": ViewController.CALLBACK_SCHEME
         ];
