@@ -91,7 +91,7 @@ class ViewController: UIViewController {
             "demo": "true",
             "multiplePayments": "true",
             "downPayment": "3000",
-            "multiplePaymentRepeat": "3",
+            "multiplePaymentsRepeat": "3",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
