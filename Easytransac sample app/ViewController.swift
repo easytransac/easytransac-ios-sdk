@@ -22,6 +22,8 @@ class ViewController: UIViewController {
             "paymentMethod": "flash",
             "amount": "107",
             "demo": "true",
+            "lastname": "Lademo",
+            "firstname": "Pierre",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
@@ -35,7 +37,7 @@ class ViewController: UIViewController {
             "amount": "102",
             "demo": "true",
             "lastname": "Lademo",
-            "firstname": "Paul",
+            "firstname": "Pierre",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
@@ -48,9 +50,7 @@ class ViewController: UIViewController {
             "paymentMethod": "mail",
             "amount": "103",
             "demo": "true",
-            "email": "demo@easytransac.com",
-            "lastname": "Lademo",
-            "firstname": "Paul",
+            "email": "damien@easytransac.com",
             "callback": ViewController.CALLBACK_SCHEME
         ];
         
